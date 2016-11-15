@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC2CC24B1DDABA6C006CB297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CC24A1DDABA6C006CB297 /* AppDelegate.swift */; };
+		BC2CC24D1DDABA6C006CB297 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CC24C1DDABA6C006CB297 /* ViewController.swift */; };
+		BC2CC2501DDABA6C006CB297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2CC24E1DDABA6C006CB297 /* Main.storyboard */; };
+		BC2CC2521DDABA6C006CB297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2CC2511DDABA6C006CB297 /* Assets.xcassets */; };
+		BC2CC2551DDABA6C006CB297 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2CC2531DDABA6C006CB297 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BC2CC2471DDABA6C006CB297 /* KYTabBarControllerDemo_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYTabBarControllerDemo_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC2CC24A1DDABA6C006CB297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC2CC24C1DDABA6C006CB297 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC2CC24F1DDABA6C006CB297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC2CC2511DDABA6C006CB297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC2CC2541DDABA6C006CB297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC2CC2561DDABA6C006CB297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC2CC2441DDABA6C006CB297 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC2CC23E1DDABA6C006CB297 = {
+			isa = PBXGroup;
+			children = (
+				BC2CC2491DDABA6C006CB297 /* KYTabBarControllerDemo_swift */,
+				BC2CC2481DDABA6C006CB297 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC2CC2481DDABA6C006CB297 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC2CC2471DDABA6C006CB297 /* KYTabBarControllerDemo_swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC2CC2491DDABA6C006CB297 /* KYTabBarControllerDemo_swift */ = {
+			isa = PBXGroup;
+			children = (
+				BC2CC24A1DDABA6C006CB297 /* AppDelegate.swift */,
+				BC2CC24C1DDABA6C006CB297 /* ViewController.swift */,
+				BC2CC24E1DDABA6C006CB297 /* Main.storyboard */,
+				BC2CC2511DDABA6C006CB297 /* Assets.xcassets */,
+				BC2CC2531DDABA6C006CB297 /* LaunchScreen.storyboard */,
+				BC2CC2561DDABA6C006CB297 /* Info.plist */,
+			);
+			path = KYTabBarControllerDemo_swift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC2CC2461DDABA6C006CB297 /* KYTabBarControllerDemo_swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC2CC2591DDABA6C006CB297 /* Build configuration list for PBXNativeTarget "KYTabBarControllerDemo_swift" */;
+			buildPhases = (
+				BC2CC2431DDABA6C006CB297 /* Sources */,
+				BC2CC2441DDABA6C006CB297 /* Frameworks */,
+				BC2CC2451DDABA6C006CB297 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYTabBarControllerDemo_swift;
+			productName = KYTabBarControllerDemo_swift;
+			productReference = BC2CC2471DDABA6C006CB297 /* KYTabBarControllerDemo_swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC2CC23F1DDABA6C006CB297 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KY;
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "KYTabBarController   Software (https://github.com/kingly09/KYTabBarController) by kingly inc. \n//\n// Permission is hereby granted, free of charge, to any person obtaining a copy\n// of this software and associated documentation files (the \"Software\"), to deal\n// in the Software without restriction, including without limitation the rights\n// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n// copies of the Software, and to permit persons to whom the Software is\n// furnished to do so, subject to the following conditions:\n//\n// The above copyright notice and this permission notice shall be included in\n// all copies or substantial portions of the Software.\n//\n// THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n// THE SOFTWARE.\n";
+				TargetAttributes = {
+					BC2CC2461DDABA6C006CB297 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = V446K9WVQL;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BC2CC2421DDABA6C006CB297 /* Build configuration list for PBXProject "KYTabBarControllerDemo_swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC2CC23E1DDABA6C006CB297;
+			productRefGroup = BC2CC2481DDABA6C006CB297 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC2CC2461DDABA6C006CB297 /* KYTabBarControllerDemo_swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC2CC2451DDABA6C006CB297 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC2CC2551DDABA6C006CB297 /* LaunchScreen.storyboard in Resources */,
+				BC2CC2521DDABA6C006CB297 /* Assets.xcassets in Resources */,
+				BC2CC2501DDABA6C006CB297 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC2CC2431DDABA6C006CB297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC2CC24D1DDABA6C006CB297 /* ViewController.swift in Sources */,
+				BC2CC24B1DDABA6C006CB297 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC2CC24E1DDABA6C006CB297 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC2CC24F1DDABA6C006CB297 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC2CC2531DDABA6C006CB297 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC2CC2541DDABA6C006CB297 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC2CC2571DDABA6C006CB297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC2CC2581DDABA6C006CB297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC2CC25A1DDABA6C006CB297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V446K9WVQL;
+				INFOPLIST_FILE = KYTabBarControllerDemo_swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingly09.KYTabBarControllerDemo-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BC2CC25B1DDABA6C006CB297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V446K9WVQL;
+				INFOPLIST_FILE = KYTabBarControllerDemo_swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingly09.KYTabBarControllerDemo-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC2CC2421DDABA6C006CB297 /* Build configuration list for PBXProject "KYTabBarControllerDemo_swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC2CC2571DDABA6C006CB297 /* Debug */,
+				BC2CC2581DDABA6C006CB297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC2CC2591DDABA6C006CB297 /* Build configuration list for PBXNativeTarget "KYTabBarControllerDemo_swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC2CC25A1DDABA6C006CB297 /* Debug */,
+				BC2CC25B1DDABA6C006CB297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC2CC23F1DDABA6C006CB297 /* Project object */;
+}
