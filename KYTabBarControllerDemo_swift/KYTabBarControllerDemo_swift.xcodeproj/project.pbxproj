@@ -12,6 +12,9 @@
 		BC2CC2501DDABA6C006CB297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2CC24E1DDABA6C006CB297 /* Main.storyboard */; };
 		BC2CC2521DDABA6C006CB297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2CC2511DDABA6C006CB297 /* Assets.xcassets */; };
 		BC2CC2551DDABA6C006CB297 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2CC2531DDABA6C006CB297 /* LaunchScreen.storyboard */; };
+		BC2CC27C1DDABD26006CB297 /* KYTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CC27B1DDABD26006CB297 /* KYTabBarController.swift */; };
+		BC2CC27E1DDABD81006CB297 /* KYTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CC27D1DDABD81006CB297 /* KYTabBar.swift */; };
+		BC2CC2801DDABDDF006CB297 /* KYPlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CC27F1DDABDDF006CB297 /* KYPlusButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		BC2CC2511DDABA6C006CB297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC2CC2541DDABA6C006CB297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC2CC2561DDABA6C006CB297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC2CC27B1DDABD26006CB297 /* KYTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYTabBarController.swift; sourceTree = "<group>"; };
+		BC2CC27D1DDABD81006CB297 /* KYTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYTabBar.swift; sourceTree = "<group>"; };
+		BC2CC27F1DDABDDF006CB297 /* KYPlusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYPlusButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		BC2CC2491DDABA6C006CB297 /* KYTabBarControllerDemo_swift */ = {
 			isa = PBXGroup;
 			children = (
+				BC2CC27A1DDABCB7006CB297 /* KYTabBarController */,
 				BC2CC24A1DDABA6C006CB297 /* AppDelegate.swift */,
 				BC2CC24C1DDABA6C006CB297 /* ViewController.swift */,
 				BC2CC24E1DDABA6C006CB297 /* Main.storyboard */,
@@ -62,6 +69,17 @@
 				BC2CC2561DDABA6C006CB297 /* Info.plist */,
 			);
 			path = KYTabBarControllerDemo_swift;
+			sourceTree = "<group>";
+		};
+		BC2CC27A1DDABCB7006CB297 /* KYTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				BC2CC27B1DDABD26006CB297 /* KYTabBarController.swift */,
+				BC2CC27D1DDABD81006CB297 /* KYTabBar.swift */,
+				BC2CC27F1DDABDDF006CB297 /* KYPlusButton.swift */,
+			);
+			name = KYTabBarController;
+			path = ../../KYTabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +111,7 @@
 				CLASSPREFIX = KY;
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = "KYTabBarController   Software (https://github.com/kingly09/KYTabBarController) by kingly inc. \n//\n// Permission is hereby granted, free of charge, to any person obtaining a copy\n// of this software and associated documentation files (the \"Software\"), to deal\n// in the Software without restriction, including without limitation the rights\n// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n// copies of the Software, and to permit persons to whom the Software is\n// furnished to do so, subject to the following conditions:\n//\n// The above copyright notice and this permission notice shall be included in\n// all copies or substantial portions of the Software.\n//\n// THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n// THE SOFTWARE.\n";
+				ORGANIZATIONNAME = "KYTabBarController   Software (https://github.com/kingly09/KYTabBarController) by kingly inc. \n//\n// Permission is hereby granted, free of charge, to any person obtaining a copy\n// of this software and associated documentation files (the \"Software\"), to deal\n// in the Software without restriction, including without limitation the rights\n// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n// copies of the Software, and to permit persons to whom the Software is\n// furnished to do so, subject to the following conditions:\n//\n// The above copyright notice and this permission notice shall be included in\n// all copies or substantial portions of the Software.\n//\n// THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n// THE SOFTWARE";
 				TargetAttributes = {
 					BC2CC2461DDABA6C006CB297 = {
 						CreatedOnToolsVersion = 8.1;
@@ -139,7 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC2CC24D1DDABA6C006CB297 /* ViewController.swift in Sources */,
+				BC2CC27E1DDABD81006CB297 /* KYTabBar.swift in Sources */,
 				BC2CC24B1DDABA6C006CB297 /* AppDelegate.swift in Sources */,
+				BC2CC27C1DDABD26006CB297 /* KYTabBarController.swift in Sources */,
+				BC2CC2801DDABDDF006CB297 /* KYPlusButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
