@@ -1,5 +1,5 @@
 //
-//  KYTabBar.h
+//  UIControl+KYTabBarControllerExtention.h
 //  KYTabBarController_objc
 //
 //  Created by kingly on 2017/6/21.
@@ -26,13 +26,22 @@
 //
 
 #import <UIKit/UIKit.h>
+@interface UIControl (KYTabBarControllerExtention)
 
-@interface KYTabBar : UITabBar
+- (UIImageView *)ky_imageView;
+- (UIView *)ky_tabBadgeView;
+- (UIImageView *)ky_tabImageView;
+- (UILabel *)ky_tabLabel;
+
 /*!
- * 让 `TabImageView` 垂直居中时，所需要的默认偏移量。
- * @attention 该值将在设置 top 和 bottom 时被同时使用，具体的操作等价于如下行为：
- * `viewController.tabBarItem.imageInsets = UIEdgeInsetsMake(tabImageViewDefaultOffset, 0, -tabImageViewDefaultOffset, 0);`
+ * 调用该方法前已经添加了系统的角标，调用该方法后，系统的角标并未被移除，只是被隐藏，调用 `-ky_removeTabBadgePoint` 后会重新展示。
  */
-@property (nonatomic, assign, readonly) CGFloat tabImageViewDefaultOffset;
+- (void)ky_showTabBadgePoint;
+- (void)ky_removeTabBadgePoint;
+- (BOOL)ky_isShowTabBadgePoint;
+
+@property (nonatomic, strong, setter=ky_setTabBadgePointView:, getter=ky_tabBadgePointView) UIView *ky_tabBadgePointView;
+@property (nonatomic, assign, setter=ky_setTabBadgePointViewOffset:, getter=ky_tabBadgePointViewOffset) UIOffset ky_tabBadgePointViewOffset;
 
 @end
+

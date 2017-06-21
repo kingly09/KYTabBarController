@@ -1,5 +1,5 @@
 //
-//  KYPlusButton.m
+//  UIView+KYTabBarControllerExtention.h
 //  KYTabBarController_objc
 //
 //  Created by kingly on 2017/6/21.
@@ -25,16 +25,18 @@
 // THE SOFTWARE. All rights reserved.
 //
 
-#import "KYPlusButton.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@implementation KYPlusButton
+@interface UIView (KYTabBarControllerExtention)
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+- (BOOL)ky_isPlusButton;
+- (BOOL)ky_isTabButton;
+- (BOOL)ky_isTabImageView;
+- (BOOL)ky_isTabLabel;
+- (BOOL)ky_isTabBadgeView;
+
++ (UIView *)ky_tabBadgePointViewWithClolor:(UIColor *)color radius:(CGFloat)radius;
 
 @end
+

@@ -13,7 +13,6 @@
 		BCAE9B941EFA08CE00B7F453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAE9B921EFA08CE00B7F453 /* Main.storyboard */; };
 		BCAE9B961EFA08CE00B7F453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCAE9B951EFA08CE00B7F453 /* Assets.xcassets */; };
 		BCAE9B991EFA08CE00B7F453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAE9B971EFA08CE00B7F453 /* LaunchScreen.storyboard */; };
-		BCAE9BA31EFA0B0400B7F453 /* KYPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BA21EFA0B0400B7F453 /* KYPlusButton.m */; };
 		BCAE9BA61EFA0B1D00B7F453 /* KYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BA51EFA0B1D00B7F453 /* KYTabBar.m */; };
 		BCAE9BA91EFA0B3800B7F453 /* KYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BA81EFA0B3800B7F453 /* KYTabBarController.m */; };
 		BCAE9BAE1EFA0BBA00B7F453 /* KYTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BAD1EFA0BBA00B7F453 /* KYTabBarControllerConfig.m */; };
@@ -21,6 +20,10 @@
 		BCAE9BB41EFA0C0100B7F453 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BB31EFA0C0100B7F453 /* SecondViewController.m */; };
 		BCAE9BB71EFA0C1500B7F453 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BB61EFA0C1500B7F453 /* ThirdViewController.m */; };
 		BCAE9BBA1EFA0C2600B7F453 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BB91EFA0C2600B7F453 /* FourthViewController.m */; };
+		BCAE9BBD1EFA12BC00B7F453 /* UIViewController+KYTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BBC1EFA12BC00B7F453 /* UIViewController+KYTabBarControllerExtention.m */; };
+		BCAE9BC01EFA131600B7F453 /* UIView+KYTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BBF1EFA131600B7F453 /* UIView+KYTabBarControllerExtention.m */; };
+		BCAE9BC31EFA135000B7F453 /* UITabBarItem+KYTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BC21EFA135000B7F453 /* UITabBarItem+KYTabBarControllerExtention.m */; };
+		BCAE9BC61EFA137500B7F453 /* UIControl+KYTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BC51EFA137500B7F453 /* UIControl+KYTabBarControllerExtention.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +37,6 @@
 		BCAE9B951EFA08CE00B7F453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCAE9B981EFA08CE00B7F453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCAE9B9A1EFA08CE00B7F453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCAE9BA11EFA0B0400B7F453 /* KYPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYPlusButton.h; sourceTree = "<group>"; };
-		BCAE9BA21EFA0B0400B7F453 /* KYPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYPlusButton.m; sourceTree = "<group>"; };
 		BCAE9BA41EFA0B1D00B7F453 /* KYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTabBar.h; sourceTree = "<group>"; };
 		BCAE9BA51EFA0B1D00B7F453 /* KYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTabBar.m; sourceTree = "<group>"; };
 		BCAE9BA71EFA0B3800B7F453 /* KYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTabBarController.h; sourceTree = "<group>"; };
@@ -50,6 +51,14 @@
 		BCAE9BB61EFA0C1500B7F453 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		BCAE9BB81EFA0C2600B7F453 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
 		BCAE9BB91EFA0C2600B7F453 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		BCAE9BBB1EFA12BC00B7F453 /* UIViewController+KYTabBarControllerExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KYTabBarControllerExtention.h"; sourceTree = "<group>"; };
+		BCAE9BBC1EFA12BC00B7F453 /* UIViewController+KYTabBarControllerExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KYTabBarControllerExtention.m"; sourceTree = "<group>"; };
+		BCAE9BBE1EFA131600B7F453 /* UIView+KYTabBarControllerExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KYTabBarControllerExtention.h"; sourceTree = "<group>"; };
+		BCAE9BBF1EFA131600B7F453 /* UIView+KYTabBarControllerExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KYTabBarControllerExtention.m"; sourceTree = "<group>"; };
+		BCAE9BC11EFA135000B7F453 /* UITabBarItem+KYTabBarControllerExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+KYTabBarControllerExtention.h"; sourceTree = "<group>"; };
+		BCAE9BC21EFA135000B7F453 /* UITabBarItem+KYTabBarControllerExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+KYTabBarControllerExtention.m"; sourceTree = "<group>"; };
+		BCAE9BC41EFA137500B7F453 /* UIControl+KYTabBarControllerExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+KYTabBarControllerExtention.h"; sourceTree = "<group>"; };
+		BCAE9BC51EFA137500B7F453 /* UIControl+KYTabBarControllerExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+KYTabBarControllerExtention.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +118,18 @@
 		BCAE9BA01EFA092900B7F453 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				BCAE9BA11EFA0B0400B7F453 /* KYPlusButton.h */,
-				BCAE9BA21EFA0B0400B7F453 /* KYPlusButton.m */,
 				BCAE9BA41EFA0B1D00B7F453 /* KYTabBar.h */,
 				BCAE9BA51EFA0B1D00B7F453 /* KYTabBar.m */,
 				BCAE9BA71EFA0B3800B7F453 /* KYTabBarController.h */,
 				BCAE9BA81EFA0B3800B7F453 /* KYTabBarController.m */,
+				BCAE9BBB1EFA12BC00B7F453 /* UIViewController+KYTabBarControllerExtention.h */,
+				BCAE9BBC1EFA12BC00B7F453 /* UIViewController+KYTabBarControllerExtention.m */,
+				BCAE9BBE1EFA131600B7F453 /* UIView+KYTabBarControllerExtention.h */,
+				BCAE9BBF1EFA131600B7F453 /* UIView+KYTabBarControllerExtention.m */,
+				BCAE9BC11EFA135000B7F453 /* UITabBarItem+KYTabBarControllerExtention.h */,
+				BCAE9BC21EFA135000B7F453 /* UITabBarItem+KYTabBarControllerExtention.m */,
+				BCAE9BC41EFA137500B7F453 /* UIControl+KYTabBarControllerExtention.h */,
+				BCAE9BC51EFA137500B7F453 /* UIControl+KYTabBarControllerExtention.m */,
 			);
 			name = libs;
 			path = ../../libs;
@@ -216,13 +231,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCAE9BC01EFA131600B7F453 /* UIView+KYTabBarControllerExtention.m in Sources */,
 				BCAE9BB41EFA0C0100B7F453 /* SecondViewController.m in Sources */,
 				BCAE9B911EFA08CE00B7F453 /* ViewController.m in Sources */,
-				BCAE9BA31EFA0B0400B7F453 /* KYPlusButton.m in Sources */,
 				BCAE9BA61EFA0B1D00B7F453 /* KYTabBar.m in Sources */,
+				BCAE9BC31EFA135000B7F453 /* UITabBarItem+KYTabBarControllerExtention.m in Sources */,
 				BCAE9BA91EFA0B3800B7F453 /* KYTabBarController.m in Sources */,
 				BCAE9BBA1EFA0C2600B7F453 /* FourthViewController.m in Sources */,
 				BCAE9BAE1EFA0BBA00B7F453 /* KYTabBarControllerConfig.m in Sources */,
+				BCAE9BBD1EFA12BC00B7F453 /* UIViewController+KYTabBarControllerExtention.m in Sources */,
+				BCAE9BC61EFA137500B7F453 /* UIControl+KYTabBarControllerExtention.m in Sources */,
 				BCAE9BB71EFA0C1500B7F453 /* ThirdViewController.m in Sources */,
 				BCAE9B8E1EFA08CE00B7F453 /* AppDelegate.m in Sources */,
 				BCAE9B8B1EFA08CE00B7F453 /* main.m in Sources */,
@@ -387,6 +405,7 @@
 				BCAE9B9F1EFA08CE00B7F453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 //
-//  KYPlusButton.h
+//  UITabBarItem+KYTabBarControllerExtention.h
 //  KYTabBarController_objc
 //
 //  Created by kingly on 2017/6/21.
@@ -27,6 +27,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KYPlusButton : UIButton
+@interface UITabBarItem (KYTabBarControllerExtention)
+
+@property (nonatomic, readonly) UIControl *ky_tabButton;
 
 @end
