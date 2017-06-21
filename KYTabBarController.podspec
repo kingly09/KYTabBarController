@@ -1,8 +1,8 @@
 
 Pod::Spec.new do |s|
 s.name         = "KYTabBarController"
-s.summary      = "KYTabBarController this is a high extension, simple completion of the mainstream App framework for IOS"
-s.description  = "This is iPad and iPhone compatible. Supports landscape and portrait orientations and can be used inside UINavigationController."
+s.summary      = "KYTabBarController this is a high extension, simple completion of the mainstream App framework for IOS."
+s.description  = "Support for iPhone and iPad. Supports landscape and portrait orientations and can be used inside UINavigationController."
 s.version      = '0.0.4'
 s.homepage     = "https://github.com/kingly09/KYTabBarController"
 s.license      = { :type => "MIT", :file => "LICENSE" }
