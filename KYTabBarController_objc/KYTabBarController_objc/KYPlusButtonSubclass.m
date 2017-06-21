@@ -151,7 +151,7 @@
 }
 
 #pragma mark - KYPlusButtonSubclassing
-
+//
 //+ (UIViewController *)plusChildViewController {
 //    UIViewController *plusChildViewController = [[UIViewController alloc] init];
 //    plusChildViewController.view.backgroundColor = [UIColor redColor];
@@ -162,18 +162,18 @@
 //}
 //
 //+ (NSUInteger)indexOfPlusButtonInTabBar {
-//    return 4;
+//    return 2;
 //}
-//
-//+ (BOOL)shouldSelectPlusChildViewController {
-//    BOOL isSelected = KYExternPlusButton.selected;
-//    if (isSelected) {
-//        NSLog(@"🔴类名与方法名：%@（在第%@行），描述：%@", @(__PRETTY_FUNCTION__), @(__LINE__), @"PlusButton is selected");
-//    } else {
-//        NSLog(@"🔴类名与方法名：%@（在第%@行），描述：%@", @(__PRETTY_FUNCTION__), @(__LINE__), @"PlusButton is not selected");
-//    }
-//    return YES;
-//}
+
++ (BOOL)shouldSelectPlusChildViewController {
+    BOOL isSelected = KYExternPlusButton.selected;
+    if (isSelected) {
+        NSLog(@"🔴类名与方法名：%@（在第%@行），描述：%@", @(__PRETTY_FUNCTION__), @(__LINE__), @"PlusButton is selected");
+    } else {
+        NSLog(@"🔴类名与方法名：%@（在第%@行），描述：%@", @(__PRETTY_FUNCTION__), @(__LINE__), @"PlusButton is not selected");
+    }
+    return YES;
+}
 
 + (CGFloat)multiplierOfTabBarHeight:(CGFloat)tabBarHeight {
     return  0.3;
