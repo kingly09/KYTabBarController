@@ -25,6 +25,7 @@
 		BCAE9BC31EFA135000B7F453 /* UITabBarItem+KYTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BC21EFA135000B7F453 /* UITabBarItem+KYTabBarControllerExtention.m */; };
 		BCAE9BC61EFA137500B7F453 /* UIControl+KYTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BC51EFA137500B7F453 /* UIControl+KYTabBarControllerExtention.m */; };
 		BCAE9BCE1EFA1A6300B7F453 /* KYPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BCD1EFA1A6300B7F453 /* KYPlusButton.m */; };
+		BCAE9BD11EFA224100B7F453 /* KYPlusButtonSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BD01EFA224100B7F453 /* KYPlusButtonSubclass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,8 @@
 		BCAE9BCB1EFA1A3100B7F453 /* KYConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYConstants.h; sourceTree = "<group>"; };
 		BCAE9BCC1EFA1A6300B7F453 /* KYPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYPlusButton.h; sourceTree = "<group>"; };
 		BCAE9BCD1EFA1A6300B7F453 /* KYPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYPlusButton.m; sourceTree = "<group>"; };
+		BCAE9BCF1EFA224100B7F453 /* KYPlusButtonSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYPlusButtonSubclass.h; sourceTree = "<group>"; };
+		BCAE9BD01EFA224100B7F453 /* KYPlusButtonSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYPlusButtonSubclass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 			children = (
 				BCAE9BAC1EFA0BBA00B7F453 /* KYTabBarControllerConfig.h */,
 				BCAE9BAD1EFA0BBA00B7F453 /* KYTabBarControllerConfig.m */,
+				BCAE9BCF1EFA224100B7F453 /* KYPlusButtonSubclass.h */,
+				BCAE9BD01EFA224100B7F453 /* KYPlusButtonSubclass.m */,
 			);
 			name = configs;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				BCAE9BB41EFA0C0100B7F453 /* SecondViewController.m in Sources */,
 				BCAE9B911EFA08CE00B7F453 /* ViewController.m in Sources */,
 				BCAE9BA61EFA0B1D00B7F453 /* KYTabBar.m in Sources */,
+				BCAE9BD11EFA224100B7F453 /* KYPlusButtonSubclass.m in Sources */,
 				BCAE9BC31EFA135000B7F453 /* UITabBarItem+KYTabBarControllerExtention.m in Sources */,
 				BCAE9BA91EFA0B3800B7F453 /* KYTabBarController.m in Sources */,
 				BCAE9BBA1EFA0C2600B7F453 /* FourthViewController.m in Sources */,

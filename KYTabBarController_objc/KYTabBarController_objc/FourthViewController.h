@@ -27,6 +27,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FourthViewController : UIViewController
+@interface FourthViewController : UITableViewController
 
 @end

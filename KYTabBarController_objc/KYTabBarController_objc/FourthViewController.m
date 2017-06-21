@@ -35,7 +35,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"我的";
+     self.view.backgroundColor = [UIColor whiteColor];
+      self.navigationItem.title = @"好物";
 
 }
 
@@ -50,7 +51,7 @@
 #pragma mark - Methods
 
 - (void)configureCell:(UITableViewCell *)cell forIndexPath:(NSIndexPath *)indexPath {
-    [[cell textLabel] setText:[NSString stringWithFormat:@"%@ Controller Cell %@", self.title, @(indexPath.row)]];
+    [[cell textLabel] setText:[NSString stringWithFormat:@"%@ Controller Cell %@",self.navigationItem.title , @(indexPath.row)]];
 }
 
 #pragma mark - Table view

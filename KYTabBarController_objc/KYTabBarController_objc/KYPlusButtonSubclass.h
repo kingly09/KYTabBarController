@@ -1,5 +1,5 @@
 //
-//  KYTabBarControllerConfig.h
+//  KYPlusButtonSubclass.h
 //  KYTabBarController_objc
 //
 //  Created by kingly on 2017/6/21.
@@ -25,12 +25,8 @@
 // THE SOFTWARE. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "KYTabBarController.h"
+#import "KYPlusButton.h"
 
-@interface KYTabBarControllerConfig : NSObject
-
-@property (nonatomic, readonly, strong) KYTabBarController *tabBarController;
-
+@interface KYPlusButtonSubclass : KYPlusButton<KYPlusButtonSubclassing>
 
 @end
