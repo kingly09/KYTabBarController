@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 s.name         = "KYTabBarController"
 s.summary      = "KYTabBarController this is a high availability, the minimum required to pass two arrays, you can complete the mainstream App framework  Library."
 s.description  = "KYTabBarController is iPad and iPhone compatible. Supports landscape and portrait orientations and can be used inside UINavigationController."
-s.version      = '0.0.1'
+s.version      = '0.0.3'
 s.homepage     = "https://github.com/kingly09/KYTabBarController"
 s.license      = { :type => "MIT", :file => "LICENSE" }
 s.author       = { "kingly" => "libintm@163.com" }
