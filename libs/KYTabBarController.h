@@ -25,7 +25,7 @@
 // THE SOFTWARE. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "KYPlusButton.h"
 #import "UIViewController+KYTabBarControllerExtention.h"
 #import "UIView+KYTabBarControllerExtention.h"
 #import "UITabBarItem+KYTabBarControllerExtention.h"
