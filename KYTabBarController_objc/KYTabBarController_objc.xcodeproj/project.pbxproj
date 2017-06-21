@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCAE9B8B1EFA08CE00B7F453 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9B8A1EFA08CE00B7F453 /* main.m */; };
+		BCAE9B8E1EFA08CE00B7F453 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9B8D1EFA08CE00B7F453 /* AppDelegate.m */; };
+		BCAE9B911EFA08CE00B7F453 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9B901EFA08CE00B7F453 /* ViewController.m */; };
+		BCAE9B941EFA08CE00B7F453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAE9B921EFA08CE00B7F453 /* Main.storyboard */; };
+		BCAE9B961EFA08CE00B7F453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCAE9B951EFA08CE00B7F453 /* Assets.xcassets */; };
+		BCAE9B991EFA08CE00B7F453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAE9B971EFA08CE00B7F453 /* LaunchScreen.storyboard */; };
+		BCAE9BA31EFA0B0400B7F453 /* KYPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BA21EFA0B0400B7F453 /* KYPlusButton.m */; };
+		BCAE9BA61EFA0B1D00B7F453 /* KYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BA51EFA0B1D00B7F453 /* KYTabBar.m */; };
+		BCAE9BA91EFA0B3800B7F453 /* KYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BA81EFA0B3800B7F453 /* KYTabBarController.m */; };
+		BCAE9BAE1EFA0BBA00B7F453 /* KYTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BAD1EFA0BBA00B7F453 /* KYTabBarControllerConfig.m */; };
+		BCAE9BB11EFA0BEF00B7F453 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BB01EFA0BEF00B7F453 /* FirstViewController.m */; };
+		BCAE9BB41EFA0C0100B7F453 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BB31EFA0C0100B7F453 /* SecondViewController.m */; };
+		BCAE9BB71EFA0C1500B7F453 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BB61EFA0C1500B7F453 /* ThirdViewController.m */; };
+		BCAE9BBA1EFA0C2600B7F453 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE9BB91EFA0C2600B7F453 /* FourthViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BCAE9B861EFA08CE00B7F453 /* KYTabBarController_objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYTabBarController_objc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCAE9B8A1EFA08CE00B7F453 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCAE9B8C1EFA08CE00B7F453 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCAE9B8D1EFA08CE00B7F453 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCAE9B8F1EFA08CE00B7F453 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BCAE9B901EFA08CE00B7F453 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BCAE9B931EFA08CE00B7F453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCAE9B951EFA08CE00B7F453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCAE9B981EFA08CE00B7F453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCAE9B9A1EFA08CE00B7F453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCAE9BA11EFA0B0400B7F453 /* KYPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYPlusButton.h; sourceTree = "<group>"; };
+		BCAE9BA21EFA0B0400B7F453 /* KYPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYPlusButton.m; sourceTree = "<group>"; };
+		BCAE9BA41EFA0B1D00B7F453 /* KYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTabBar.h; sourceTree = "<group>"; };
+		BCAE9BA51EFA0B1D00B7F453 /* KYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTabBar.m; sourceTree = "<group>"; };
+		BCAE9BA71EFA0B3800B7F453 /* KYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTabBarController.h; sourceTree = "<group>"; };
+		BCAE9BA81EFA0B3800B7F453 /* KYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTabBarController.m; sourceTree = "<group>"; };
+		BCAE9BAC1EFA0BBA00B7F453 /* KYTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTabBarControllerConfig.h; sourceTree = "<group>"; };
+		BCAE9BAD1EFA0BBA00B7F453 /* KYTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTabBarControllerConfig.m; sourceTree = "<group>"; };
+		BCAE9BAF1EFA0BEF00B7F453 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		BCAE9BB01EFA0BEF00B7F453 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		BCAE9BB21EFA0C0100B7F453 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		BCAE9BB31EFA0C0100B7F453 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		BCAE9BB51EFA0C1500B7F453 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		BCAE9BB61EFA0C1500B7F453 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		BCAE9BB81EFA0C2600B7F453 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		BCAE9BB91EFA0C2600B7F453 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCAE9B831EFA08CE00B7F453 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCAE9B7D1EFA08CE00B7F453 = {
+			isa = PBXGroup;
+			children = (
+				BCAE9B881EFA08CE00B7F453 /* KYTabBarController_objc */,
+				BCAE9B871EFA08CE00B7F453 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCAE9B871EFA08CE00B7F453 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCAE9B861EFA08CE00B7F453 /* KYTabBarController_objc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCAE9B881EFA08CE00B7F453 /* KYTabBarController_objc */ = {
+			isa = PBXGroup;
+			children = (
+				BCAE9BAB1EFA0B6E00B7F453 /* configs */,
+				BCAE9BAA1EFA0B5200B7F453 /* classes */,
+				BCAE9BA01EFA092900B7F453 /* libs */,
+				BCAE9B8C1EFA08CE00B7F453 /* AppDelegate.h */,
+				BCAE9B8D1EFA08CE00B7F453 /* AppDelegate.m */,
+				BCAE9B8F1EFA08CE00B7F453 /* ViewController.h */,
+				BCAE9B901EFA08CE00B7F453 /* ViewController.m */,
+				BCAE9B921EFA08CE00B7F453 /* Main.storyboard */,
+				BCAE9B951EFA08CE00B7F453 /* Assets.xcassets */,
+				BCAE9B971EFA08CE00B7F453 /* LaunchScreen.storyboard */,
+				BCAE9B9A1EFA08CE00B7F453 /* Info.plist */,
+				BCAE9B891EFA08CE00B7F453 /* Supporting Files */,
+			);
+			path = KYTabBarController_objc;
+			sourceTree = "<group>";
+		};
+		BCAE9B891EFA08CE00B7F453 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCAE9B8A1EFA08CE00B7F453 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCAE9BA01EFA092900B7F453 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				BCAE9BA11EFA0B0400B7F453 /* KYPlusButton.h */,
+				BCAE9BA21EFA0B0400B7F453 /* KYPlusButton.m */,
+				BCAE9BA41EFA0B1D00B7F453 /* KYTabBar.h */,
+				BCAE9BA51EFA0B1D00B7F453 /* KYTabBar.m */,
+				BCAE9BA71EFA0B3800B7F453 /* KYTabBarController.h */,
+				BCAE9BA81EFA0B3800B7F453 /* KYTabBarController.m */,
+			);
+			name = libs;
+			path = ../../libs;
+			sourceTree = "<group>";
+		};
+		BCAE9BAA1EFA0B5200B7F453 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				BCAE9BAF1EFA0BEF00B7F453 /* FirstViewController.h */,
+				BCAE9BB01EFA0BEF00B7F453 /* FirstViewController.m */,
+				BCAE9BB21EFA0C0100B7F453 /* SecondViewController.h */,
+				BCAE9BB31EFA0C0100B7F453 /* SecondViewController.m */,
+				BCAE9BB51EFA0C1500B7F453 /* ThirdViewController.h */,
+				BCAE9BB61EFA0C1500B7F453 /* ThirdViewController.m */,
+				BCAE9BB81EFA0C2600B7F453 /* FourthViewController.h */,
+				BCAE9BB91EFA0C2600B7F453 /* FourthViewController.m */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+		BCAE9BAB1EFA0B6E00B7F453 /* configs */ = {
+			isa = PBXGroup;
+			children = (
+				BCAE9BAC1EFA0BBA00B7F453 /* KYTabBarControllerConfig.h */,
+				BCAE9BAD1EFA0BBA00B7F453 /* KYTabBarControllerConfig.m */,
+			);
+			name = configs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCAE9B851EFA08CE00B7F453 /* KYTabBarController_objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCAE9B9D1EFA08CE00B7F453 /* Build configuration list for PBXNativeTarget "KYTabBarController_objc" */;
+			buildPhases = (
+				BCAE9B821EFA08CE00B7F453 /* Sources */,
+				BCAE9B831EFA08CE00B7F453 /* Frameworks */,
+				BCAE9B841EFA08CE00B7F453 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYTabBarController_objc;
+			productName = KYTabBarController_objc;
+			productReference = BCAE9B861EFA08CE00B7F453 /* KYTabBarController_objc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCAE9B7E1EFA08CE00B7F453 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "KYTabBarController Software https://github.com/kingly09/KYTabBarController  by kingly inc.  \n\n//\n// Permission is hereby granted, free of charge, to any person obtaining a copy\n// of this software and associated documentation files (the \"Software\"), to deal\n// in the Software without restriction, including without limitation the rights\n// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n// copies of the Software, and to permit persons to whom the Software is\n// furnished to do so, subject to the following conditions:\n//\n// The above copyright notice and this permission notice shall be included in\n// all copies or substantial portions of the Software.\n//\n// THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n// THE SOFTWARE.";
+				TargetAttributes = {
+					BCAE9B851EFA08CE00B7F453 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = V446K9WVQL;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BCAE9B811EFA08CE00B7F453 /* Build configuration list for PBXProject "KYTabBarController_objc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCAE9B7D1EFA08CE00B7F453;
+			productRefGroup = BCAE9B871EFA08CE00B7F453 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCAE9B851EFA08CE00B7F453 /* KYTabBarController_objc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCAE9B841EFA08CE00B7F453 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAE9B991EFA08CE00B7F453 /* LaunchScreen.storyboard in Resources */,
+				BCAE9B961EFA08CE00B7F453 /* Assets.xcassets in Resources */,
+				BCAE9B941EFA08CE00B7F453 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCAE9B821EFA08CE00B7F453 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAE9BB41EFA0C0100B7F453 /* SecondViewController.m in Sources */,
+				BCAE9B911EFA08CE00B7F453 /* ViewController.m in Sources */,
+				BCAE9BA31EFA0B0400B7F453 /* KYPlusButton.m in Sources */,
+				BCAE9BA61EFA0B1D00B7F453 /* KYTabBar.m in Sources */,
+				BCAE9BA91EFA0B3800B7F453 /* KYTabBarController.m in Sources */,
+				BCAE9BBA1EFA0C2600B7F453 /* FourthViewController.m in Sources */,
+				BCAE9BAE1EFA0BBA00B7F453 /* KYTabBarControllerConfig.m in Sources */,
+				BCAE9BB71EFA0C1500B7F453 /* ThirdViewController.m in Sources */,
+				BCAE9B8E1EFA08CE00B7F453 /* AppDelegate.m in Sources */,
+				BCAE9B8B1EFA08CE00B7F453 /* main.m in Sources */,
+				BCAE9BB11EFA0BEF00B7F453 /* FirstViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BCAE9B921EFA08CE00B7F453 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCAE9B931EFA08CE00B7F453 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCAE9B971EFA08CE00B7F453 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCAE9B981EFA08CE00B7F453 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCAE9B9B1EFA08CE00B7F453 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCAE9B9C1EFA08CE00B7F453 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCAE9B9E1EFA08CE00B7F453 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V446K9WVQL;
+				INFOPLIST_FILE = KYTabBarController_objc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingly09.KYTabBarController-objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BCAE9B9F1EFA08CE00B7F453 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V446K9WVQL;
+				INFOPLIST_FILE = KYTabBarController_objc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingly09.KYTabBarController-objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCAE9B811EFA08CE00B7F453 /* Build configuration list for PBXProject "KYTabBarController_objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCAE9B9B1EFA08CE00B7F453 /* Debug */,
+				BCAE9B9C1EFA08CE00B7F453 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCAE9B9D1EFA08CE00B7F453 /* Build configuration list for PBXNativeTarget "KYTabBarController_objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCAE9B9E1EFA08CE00B7F453 /* Debug */,
+				BCAE9B9F1EFA08CE00B7F453 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCAE9B7E1EFA08CE00B7F453 /* Project object */;
+}
