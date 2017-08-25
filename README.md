@@ -599,6 +599,18 @@ CocoaPods 如果不知道怎么使用？请参考  [https://my.oschina.net/kingl
 
 注：“仅显示图标，并使图标垂直居中”这里所指的“图标”，其所属的类是私有类： `UITabBarSwappableImageView`，所以 `KYTabBarController` 在相关的接口命名时会包含 `SwappableImageView` 字样。另外，使用该特性需要 `pod update` 到 1.5.5以上的版本。
 
+#### 如何实现添加选中背景色的功能 ，像下面这样：
+<img width="409" alt="screen shot 2015-10-28 at 9 21 56 am" src="https://cloud.githubusercontent.com/assets/7238866/10777333/5d7811c8-7d55-11e5-88be-8cb11bbeaf90.png">
+
+详情见 `KYTabBarControllerConfig`  类中下面方法的实现：
+
+ ```Objective-C
+/**
+ *  更多TabBar自定义设置：比如：tabBarItem 的选中和不选中文字和背景图片属性、tabbar 背景图片属性
+ */
+- (void)customizeTabBarAppearance:(CYLTabBarController *)tabBarController;
+
+ ```
 
 
 #  联系与建议反馈
