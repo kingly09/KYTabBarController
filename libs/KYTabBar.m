@@ -28,6 +28,7 @@
 #import "KYTabBar.h"
 #import "KYPlusButton.h"
 #import "KYTabBarController.h"
+#import "KYConstants.h"
 
 static void *const KYTabBarContext = (void*)&KYTabBarContext;
 
@@ -70,6 +71,15 @@ static void *const KYTabBarContext = (void*)&KYTabBarContext;
     _tabBarItemWidth = KYTabBarItemWidth;
     [self addObserver:self forKeyPath:@"tabBarItemWidth" options:NSKeyValueObservingOptionNew context:KYTabBarContext];
     return self;
+}
+
+- (CGSize)sizeThatFits:(CGSize)size {
+    CGSize sizeThatFits = [super sizeThatFits:size];
+    CGFloat height = [self ky_tabBarController].tabBarHeight;
+    if (height > 0 && !KY_IS_IPHONE_X && KY_IS_IOS_11) {
+        sizeThatFits.height = [self ky_tabBarController].tabBarHeight;
+    }
+    return sizeThatFits;
 }
 
 /**
@@ -257,7 +267,7 @@ static void *const KYTabBarContext = (void*)&KYTabBarContext;
             shouldCustomizeImageView = NO;
         }
     }];
-    if (shouldCustomizeImageView) {
+    if (shouldCustomizeImageView && !KY_IS_IPHONE_X) {
         self.tabImageViewDefaultOffset = tabImageViewDefaultOffset;
     }
 }

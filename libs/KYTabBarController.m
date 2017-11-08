@@ -85,7 +85,7 @@ static void * const KYTabImageViewDefaultOffsetContext = (void*)&KYTabImageViewD
 }
 
 - (void)viewWillLayoutSubviews {
-    if (!self.tabBarHeight) {
+    if (KY_IS_IOS_11 || !self.tabBarHeight) {
         return;
     }
     self.tabBar.frame = ({

@@ -29,5 +29,8 @@
 #define KYConstants_h
 
 #define KY_DEPRECATED(explain) __attribute__((deprecated(explain)))
+#define KY_IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define KY_IS_IPHONE_X (KY_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 812.0f)
+#define KY_IS_IOS_11  ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.f)
 
 #endif /* KYConstants_h */
