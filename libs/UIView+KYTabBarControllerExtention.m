@@ -46,7 +46,7 @@
         return NO;
     }
     NSString *subString = [NSString stringWithFormat:@"%@cat%@ew", @"Indi" , @"orVi"];
-    BOOL isBackgroundImage = [self ky_classStringhasPrefix:subString];
+    BOOL isBackgroundImage = [self ky_classStringHasPrefix:subString];
     BOOL isTabImageView = !isBackgroundImage;
     return isTabImageView;
 }
@@ -64,7 +64,7 @@
         return NO;
     }
     NSString *tabBarClassString = [NSString stringWithFormat:@"%@IB%@", @"_U" , @"adg"];
-    BOOL isTabBadgeView = [self ky_classStringhasPrefix:tabBarClassString];;
+    BOOL isTabBadgeView = [self ky_classStringHasPrefix:tabBarClassString];;
     return isTabBadgeView;
 }
 
@@ -81,13 +81,18 @@
 
 - (BOOL)ky_isTabBarClass {
     NSString *tabBarClassString = [NSString stringWithFormat:@"U%@a%@ar", @"IT" , @"bB"];
-    BOOL isTabBarClass = [self ky_classStringhasPrefix:tabBarClassString];
+    BOOL isTabBarClass = [self ky_classStringHasPrefix:tabBarClassString];
     return isTabBarClass;
 }
 
-- (BOOL)ky_classStringhasPrefix:(NSString *)subString {
+- (BOOL)ky_classStringHasPrefix:(NSString *)prefix {
     NSString *classString = NSStringFromClass([self class]);
-    return [classString hasPrefix:subString];
+    return [classString hasPrefix:prefix];
+}
+
+- (BOOL)ky_classStringHasSuffix:(NSString *)suffix {
+    NSString *classString = NSStringFromClass([self class]);
+    return [classString hasSuffix:suffix];
 }
 
 + (UIView *)ky_tabBadgePointViewWithClolor:(UIColor *)color radius:(CGFloat)radius {

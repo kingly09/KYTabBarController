@@ -32,10 +32,10 @@
 @implementation UITabBarItem (KYTabBarControllerExtention)
 
 + (void)load {
-    [self ky_swizzleRedPacketMethod];
+    [self ky_swizzleSetBadgeValue];
 }
 
-+ (void)ky_swizzleRedPacketMethod {
++ (void)ky_swizzleSetBadgeValue {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         ky_ClassMethodSwizzle([self class], @selector(setBadgeValue:), @selector(ky_setBadgeValue:));

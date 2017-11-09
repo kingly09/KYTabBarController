@@ -385,7 +385,7 @@ static void * const KYTabImageViewDefaultOffsetContext = (void*)&KYTabImageViewD
     UIWindow *window = delegate.window;
     UIViewController *rootViewController = [window.rootViewController ky_getViewControllerInsteadIOfNavigationController];;
     if ([rootViewController isKindOfClass:[KYTabBarController class]]) {
-        tabBarController = (KYTabBarController *)window.rootViewController;
+        tabBarController = (KYTabBarController *)rootViewController;
     }
     return tabBarController;
 }
