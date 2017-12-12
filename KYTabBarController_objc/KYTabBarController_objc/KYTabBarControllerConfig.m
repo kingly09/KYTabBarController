@@ -145,7 +145,7 @@ static CGFloat const KYTabBarControllerHeight = 40.f;
 - (void)customizeTabBarAppearance:(KYTabBarController *)tabBarController {
 
     // 自定义 TabBar 高度
-    tabBarController.tabBarHeight = KY_IS_IPHONE_X ? 65 : 40;
+     tabBarController.tabBarHeight = KY_IS_IPHONE_X ? 65 : 40;
     // set the text color for unselected state
     // 普通状态下的文字属性
     NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
@@ -190,7 +190,7 @@ static CGFloat const KYTabBarControllerHeight = 40.f;
     
     // remove the bar system shadow image
     // 去除 TabBar 自带的顶部阴影
-    // [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
+     [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
 }
 
 - (void)updateTabBarCustomizationWhenTabBarItemWidthDidUpdate {

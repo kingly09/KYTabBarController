@@ -79,7 +79,7 @@ FOUNDATION_EXTERN CGFloat KYTabBarItemWidth;
  */
 @property (nonatomic, readonly, assign) UIEdgeInsets imageInsets;
 
-/*! 
+/*!
  * To set both UIBarItem label text attributes in the tabBar,
  * use the following to tweak the relative position of the label within the tab button (for handling visual centering corrections if needed because of custom text attributes)
  */
@@ -104,6 +104,7 @@ FOUNDATION_EXTERN CGFloat KYTabBarItemWidth;
 - (void)updateSelectionStatusIfNeededForTabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController;
 
 - (void)hideTabBadgeBackgroundSeparator;
+
 /*!
  * Judge if there is plus button.
  */
@@ -130,3 +131,4 @@ FOUNDATION_EXTERN CGFloat KYTabBarItemWidth;
 @end
 
 FOUNDATION_EXTERN NSString *const KYTabBarItemWidthDidChangeNotification;
+

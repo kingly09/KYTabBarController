@@ -54,11 +54,10 @@ static void * const KYTabImageViewDefaultOffsetContext = (void*)&KYTabImageViewD
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // 处理tabBar，使用自定义 tabBar 添加 发布按钮
     if (KY_IS_IPHONE_X) {
         self.tabBarHeight = 83;
     }
-    
+    // 处理tabBar，使用自定义 tabBar 添加 发布按钮
     [self setUpTabBar];
     // KVO注册监听
     if (!self.isObservingTabImageViewDefaultOffset) {
@@ -72,7 +71,7 @@ static void * const KYTabImageViewDefaultOffsetContext = (void*)&KYTabImageViewD
 }
 
 - (void)viewDidLayoutSubviews {
-    [self.tabBar layoutSubviews];
+    [self.tabBar layoutSubviews];//Fix issue #93
     UITabBar *tabBar =  self.tabBar;
     for (UIControl *control in tabBar.subviews) {
         if ([control isKindOfClass:[UIControl class]]) {
@@ -355,7 +354,6 @@ static void * const KYTabImageViewDefaultOffsetContext = (void*)&KYTabImageViewD
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectControl:(UIControl *)control {
-    
 }
 
 - (void)didSelectControl:(UIControl *)control {
@@ -393,6 +391,5 @@ static void * const KYTabImageViewDefaultOffsetContext = (void*)&KYTabImageViewD
     }
     return tabBarController;
 }
-
 
 @end

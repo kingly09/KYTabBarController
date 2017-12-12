@@ -76,7 +76,7 @@ static void *const KYTabBarContext = (void*)&KYTabBarContext;
 - (CGSize)sizeThatFits:(CGSize)size {
     CGSize sizeThatFits = [super sizeThatFits:size];
     CGFloat height = [self ky_tabBarController].tabBarHeight;
-    if (height > 0 ) {
+    if (height > 0) {
         sizeThatFits.height = [self ky_tabBarController].tabBarHeight;
     }
     return sizeThatFits;
@@ -96,9 +96,9 @@ static void *const KYTabBarContext = (void*)&KYTabBarContext;
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    CGFloat taBarWidth = self.bounds.size.width;
-    CGFloat taBarHeight = self.bounds.size.height;
-    KYTabBarItemWidth = (taBarWidth - KYPlusButtonWidth) / KYTabbarItemsCount;
+    CGFloat tabBarWidth = self.bounds.size.width;
+    CGFloat tabBarHeight = self.bounds.size.height;
+    KYTabBarItemWidth = (tabBarWidth - KYPlusButtonWidth) / KYTabbarItemsCount;
     self.tabBarItemWidth = KYTabBarItemWidth;
     NSArray *sortedSubviews = [self sortedSubviews];
     self.tabBarButtonArray = [self tabBarButtonFromTabBarSubviews:sortedSubviews];
@@ -106,9 +106,9 @@ static void *const KYTabBarContext = (void*)&KYTabBarContext;
     if (!KYExternPlusButton) {
         return;
     }
-    CGFloat multiplierOfTabBarHeight = [self multiplierOfTabBarHeight:taBarHeight];
-    CGFloat constantOfPlusButtonCenterYOffset = [self constantOfPlusButtonCenterYOffsetForTabBarHeight:taBarHeight];
-    self.plusButton.center = CGPointMake(taBarWidth * 0.5, taBarHeight * multiplierOfTabBarHeight + constantOfPlusButtonCenterYOffset);
+    CGFloat multiplierOfTabBarHeight = [self multiplierOfTabBarHeight:tabBarHeight];
+    CGFloat constantOfPlusButtonCenterYOffset = [self constantOfPlusButtonCenterYOffsetForTabBarHeight:tabBarHeight];
+    self.plusButton.center = CGPointMake(tabBarWidth * 0.5, tabBarHeight * multiplierOfTabBarHeight + constantOfPlusButtonCenterYOffset);
     NSUInteger plusButtonIndex = [self plusButtonIndex];
     [self.tabBarButtonArray enumerateObjectsUsingBlock:^(UIView * _Nonnull childView, NSUInteger buttonIndex, BOOL * _Nonnull stop) {
         //调整UITabBarItem的位置
@@ -150,6 +150,7 @@ static void *const KYTabBarContext = (void*)&KYTabBarContext;
     }
 }
 
+
 - (void)dealloc {
     // KVO反注册
     [self removeObserver:self forKeyPath:@"tabBarItemWidth"];
@@ -171,10 +172,10 @@ static void *const KYTabBarContext = (void*)&KYTabBarContext;
     }
 }
 
-- (CGFloat)multiplierOfTabBarHeight:(CGFloat)taBarHeight {
+- (CGFloat)multiplierOfTabBarHeight:(CGFloat)tabBarHeight {
     CGFloat multiplierOfTabBarHeight;
     if ([[self.plusButton class] respondsToSelector:@selector(multiplierOfTabBarHeight:)]) {
-        multiplierOfTabBarHeight = [[self.plusButton class] multiplierOfTabBarHeight:taBarHeight];
+        multiplierOfTabBarHeight = [[self.plusButton class] multiplierOfTabBarHeight:tabBarHeight];
     }
     
 #pragma clang diagnostic push
@@ -198,10 +199,10 @@ static void *const KYTabBarContext = (void*)&KYTabBarContext;
     return multiplierOfTabBarHeight;
 }
 
-- (CGFloat)constantOfPlusButtonCenterYOffsetForTabBarHeight:(CGFloat)taBarHeight {
+- (CGFloat)constantOfPlusButtonCenterYOffsetForTabBarHeight:(CGFloat)tabBarHeight {
     CGFloat constantOfPlusButtonCenterYOffset = 0.f;
     if ([[self.plusButton class] respondsToSelector:@selector(constantOfPlusButtonCenterYOffsetForTabBarHeight:)]) {
-        constantOfPlusButtonCenterYOffset = [[self.plusButton class] constantOfPlusButtonCenterYOffsetForTabBarHeight:taBarHeight];
+        constantOfPlusButtonCenterYOffset = [[self.plusButton class] constantOfPlusButtonCenterYOffsetForTabBarHeight:tabBarHeight];
     }
     return constantOfPlusButtonCenterYOffset;
 }
@@ -280,7 +281,6 @@ static void *const KYTabBarContext = (void*)&KYTabBarContext;
  */
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     //1. 边界情况：不能响应点击事件
-    
     BOOL canNotResponseEvent = self.hidden || (self.alpha <= 0.01f) || (self.userInteractionEnabled == NO);
     if (canNotResponseEvent) {
         return nil;
@@ -314,7 +314,6 @@ static void *const KYTabBarContext = (void*)&KYTabBarContext;
     }
     
     //3. 最后处理 TabBarItems 凸出的部分、添加到 TabBar 上的自定义视图、点击到 TabBar 上的空白区域
-    
     UIView *result = [super hitTest:point withEvent:event];
     if (result) {
         return result;
@@ -329,4 +328,5 @@ static void *const KYTabBarContext = (void*)&KYTabBarContext;
     }
     return nil;
 }
+
 @end
