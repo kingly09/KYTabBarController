@@ -103,6 +103,7 @@ FOUNDATION_EXTERN CGFloat KYTabBarItemWidth;
 
 - (void)updateSelectionStatusIfNeededForTabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController;
 
+- (void)hideTabBadgeBackgroundSeparator;
 /*!
  * Judge if there is plus button.
  */

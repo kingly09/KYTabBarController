@@ -137,6 +137,7 @@
         return;
     }
     [self.ky_tabButton ky_showTabBadgePoint];
+    [[self ky_tabBarController].tabBar layoutIfNeeded];
 }
 
 - (void)ky_removeTabBadgePoint {
@@ -144,6 +145,7 @@
         return;
     }
     [self.ky_tabButton ky_removeTabBadgePoint];
+    [[self ky_tabBarController].tabBar layoutIfNeeded];
 }
 
 - (BOOL)ky_isShowTabBadgePoint {

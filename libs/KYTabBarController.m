@@ -158,6 +158,11 @@ static void * const KYTabImageViewDefaultOffsetContext = (void*)&KYTabImageViewD
                              titlePositionAdjustment:UIOffsetZero];
 }
 
+- (void)hideTabBadgeBackgroundSeparator {
+    [self.tabBar layoutIfNeeded];
+    self.tabBar.ky_tabBadgeBackgroundSeparator.hidden = YES;
+}
+
 + (BOOL)havePlusButton {
     if (KYExternPlusButton) {
         return YES;

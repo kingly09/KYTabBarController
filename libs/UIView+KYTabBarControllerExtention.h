@@ -36,6 +36,10 @@
 - (BOOL)ky_isTabLabel;
 - (BOOL)ky_isTabBadgeView;
 
+- (BOOL)ky_isTabBackgroundView;
+- (UIView *)ky_tabBadgeBackgroundView;
+- (UIView *)ky_tabBadgeBackgroundSeparator;
+
 + (UIView *)ky_tabBadgePointViewWithClolor:(UIColor *)color radius:(CGFloat)radius;
 
 @end
