@@ -30,7 +30,7 @@
 
 #define KY_DEPRECATED(explain) __attribute__((deprecated(explain)))
 #define KY_IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-#define KY_IS_IPHONE_X (KY_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 812.0f)
 #define KY_IS_IOS_11  ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.f)
+#define KY_IS_IPHONE_X (KY_IS_IOS_11 && KY_IS_IPHONE && (MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) == 375 && MAX([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) == 812))
 
 #endif /* KYConstants_h */

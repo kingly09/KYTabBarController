@@ -36,7 +36,7 @@ static CGFloat const KYTabBarControllerHeight = 40.f;
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (self.viewControllers.count > 0) {
-        viewController.hidesBottomBarWhenPushed = YES;
+         viewController.hidesBottomBarWhenPushed = YES;
     }
     [super pushViewController:viewController animated:animated];
 }
@@ -144,6 +144,8 @@ static CGFloat const KYTabBarControllerHeight = 40.f;
  */
 - (void)customizeTabBarAppearance:(KYTabBarController *)tabBarController {
 
+    // 自定义 TabBar 高度
+    tabBarController.tabBarHeight = KY_IS_IPHONE_X ? 65 : 40;
     // set the text color for unselected state
     // 普通状态下的文字属性
     NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
@@ -178,8 +180,13 @@ static CGFloat const KYTabBarControllerHeight = 40.f;
     
     // set the bar background image
     // 设置背景图片
-//     UITabBar *tabBarAppearance = [UITabBar appearance];
-//     [tabBarAppearance setBackgroundImage:[UIImage imageNamed:@"tab_bar"]];
+    //     UITabBar *tabBarAppearance = [UITabBar appearance];
+    //     [tabBarAppearance setBackgroundImage:[UIImage imageNamed:@"tab_bar"]];
+    
+    UITabBar *tabBarAppearance = [UITabBar appearance];
+    UIImage *tabBarBackgroundImage = [UIImage imageNamed:@"tab_bar"];
+    UIImage *scanedTabBarBackgroundImage = [[self class] scaleImage:tabBarBackgroundImage toScale:1.0];
+    [tabBarAppearance setBackgroundImage:scanedTabBarBackgroundImage];
     
     // remove the bar system shadow image
     // 去除 TabBar 自带的顶部阴影
@@ -194,7 +201,7 @@ static CGFloat const KYTabBarControllerHeight = 40.f;
         } else if (orientation == UIDeviceOrientationPortrait) {
             NSLog(@"Landscape portrait!");
         }
-        [self customizeTabBarSelectionIndicatorImage];
+        [self customSizeTabBarSelectionIndicatorImage];
     };
     [[NSNotificationCenter defaultCenter] addObserverForName:KYTabBarItemWidthDidChangeNotification
                                                       object:nil
@@ -202,7 +209,7 @@ static CGFloat const KYTabBarControllerHeight = 40.f;
                                                   usingBlock:deviceOrientationDidChangeBlock];
 }
 
-- (void)customizeTabBarSelectionIndicatorImage {
+- (void)customSizeTabBarSelectionIndicatorImage {
     ///Get initialized TabBar Height if exists, otherwise get Default TabBar Height.
     CGFloat tabBarHeight = KYTabBarControllerHeight;
     CGSize selectionIndicatorImageSize = CGSizeMake(KYTabBarItemWidth, tabBarHeight);
@@ -211,6 +218,14 @@ static CGFloat const KYTabBarControllerHeight = 40.f;
     [tabBar setSelectionIndicatorImage:
      [[self class] imageWithColor:[UIColor yellowColor]
                              size:selectionIndicatorImageSize]];
+}
+
++(UIImage *)scaleImage:(UIImage *)image toScale:(float)scaleSize {
+    UIGraphicsBeginImageContext(CGSizeMake([UIScreen mainScreen].bounds.size.width * scaleSize, image.size.height * scaleSize));
+    [image drawInRect:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width * scaleSize, image.size.height * scaleSize)];
+    UIImage *scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return scaledImage;
 }
 
 + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size {

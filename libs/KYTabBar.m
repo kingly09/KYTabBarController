@@ -144,6 +144,9 @@ static void *const KYTabBarContext = (void*)&KYTabBarContext;
     }
     if(context == KYTabBarContext) {
         [[NSNotificationCenter defaultCenter] postNotificationName:KYTabBarItemWidthDidChangeNotification object:self];
+        if (KY_IS_IPHONE_X && KY_IS_IOS_11) {
+            [self layoutIfNeeded];
+        }
     }
 }
 
@@ -267,7 +270,7 @@ static void *const KYTabBarContext = (void*)&KYTabBarContext;
             shouldCustomizeImageView = NO;
         }
     }];
-    if (shouldCustomizeImageView && !KY_IS_IPHONE_X) {
+    if (shouldCustomizeImageView) {
         self.tabImageViewDefaultOffset = tabImageViewDefaultOffset;
     }
 }
