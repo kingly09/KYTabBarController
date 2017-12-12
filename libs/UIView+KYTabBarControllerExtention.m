@@ -46,7 +46,7 @@
         return NO;
     }
     NSString *subString = [NSString stringWithFormat:@"%@cat%@ew", @"Indi" , @"orVi"];
-    BOOL isBackgroundImage = [self ky_classStringHasPrefix:subString];
+    BOOL isBackgroundImage = [self ky_classStringHasSuffix:subString];
     BOOL isTabImageView = !isBackgroundImage;
     return isTabImageView;
 }
@@ -103,7 +103,6 @@
     }
     return nil;
 }
-
 
 - (BOOL)ky_isKindOfClass:(Class)class {
     BOOL isKindOfClass = [self isKindOfClass:class];
