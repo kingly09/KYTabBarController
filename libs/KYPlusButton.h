@@ -39,8 +39,8 @@
 /*!
  * 用来自定义加号按钮的位置，如果不实现默认居中。
  * @attention 以下两种情况下，必须实现该协议方法，否则 KYTabBarController 会抛出 exception 来进行提示：
-                 1. 添加了 PlusButton 且 TabBarItem 的个数是奇数。
-                 2. 实现了 `+plusChildViewController`。
+ 1. 添加了 PlusButton 且 TabBarItem 的个数是奇数。
+ 2. 实现了 `+plusChildViewController`。
  * @return 用来自定义加号按钮在 TabBar 中的位置。
  *
  */
@@ -50,16 +50,16 @@
  * 该方法是为了调整 PlusButton 中心点Y轴方向的位置，建议在按钮超出了 tabbar 的边界时实现该方法。
  * @attention 如果不实现该方法，内部会自动进行比对，预设一个较为合适的位置，如果实现了该方法，预设的逻辑将失效。
  * @return 返回值是自定义按钮中心点Y轴方向的坐标除以 tabbar 的高度，
-           内部实现时，会使用该返回值来设置 PlusButton 的 centerY 坐标，公式如下：
-              `PlusButtonCenterY = multiplierOfTabBarHeight * taBarHeight + constantOfPlusButtonCenterYOffset;`
-           也就是说：如果 constantOfPlusButtonCenterYOffset 为0，同时 multiplierOfTabBarHeight 的值是0.5，表示 PlusButton 居中，小于0.5表示 PlusButton 偏上，大于0.5则表示偏下。
+ 内部实现时，会使用该返回值来设置 PlusButton 的 centerY 坐标，公式如下：
+ `PlusButtonCenterY = multiplierOfTabBarHeight * tabBarHeight + constantOfPlusButtonCenterYOffset;`
+ 也就是说：如果 constantOfPlusButtonCenterYOffset 为0，同时 multiplierOfTabBarHeight 的值是0.5，表示 PlusButton 居中，小于0.5表示 PlusButton 偏上，大于0.5则表示偏下。
  *
  */
 + (CGFloat)multiplierOfTabBarHeight:(CGFloat)tabBarHeight;
 
 /*!
  * 见 `+multiplierOfTabBarHeight:` 注释：
- * `PlusButtonCenterY = multiplierOfTabBarHeight * taBarHeight + constantOfPlusButtonCenterYOffset;`
+ * `PlusButtonCenterY = multiplierOfTabBarHeight * tabBarHeight + constantOfPlusButtonCenterYOffset;`
  * 也就是说： constantOfPlusButtonCenterYOffset 大于0会向下偏移，小于0会向上偏移。
  * @attention 实现了该方法，但没有实现 `+multiplierOfTabBarHeight:` 方法，在这种情况下，会在预设逻辑的基础上进行偏移。
  */
@@ -74,11 +74,11 @@
 + (UIViewController *)plusChildViewController;
 
 /*!
- * 
+ *
  Asks the delegate whether the specified view controller should be made active.
  Return YES if the view controller’s tab should be selected or NO if the current tab should remain active.
  Returns YES true if the view controller’s tab should be selected or
-         NO  false if the current tab should remain active.
+ NO  false if the current tab should remain active.
  */
 + (BOOL)shouldSelectPlusChildViewController;
 

@@ -26,7 +26,6 @@
 //
 
 #import "KYPlusButton.h"
-
 #import "KYTabBarController.h"
 
 CGFloat KYPlusButtonWidth = 0.0f;
@@ -98,5 +97,6 @@ UIViewController *KYPlusChildViewController = nil;
  *  重写此方法即不会出现上述情况，与 UITabBarButton 相似
  */
 - (void)setHighlighted:(BOOL)highlighted {}
+
 
 @end
