@@ -26,9 +26,9 @@
 //
 
 #import "UIControl+KYTabBarControllerExtention.h"
-
 #import <objc/runtime.h>
 #import "UIView+KYTabBarControllerExtention.h"
+#import "KYConstants.h"
 
 @implementation UIControl (KYTabBarControllerExtention)
 
@@ -62,7 +62,7 @@
          [NSLayoutConstraint constraintWithItem:self.ky_tabBadgePointView
                                       attribute:NSLayoutAttributeCenterX
                                       relatedBy:0
-                                         toItem:self.ky_imageView
+                                         toItem:self.ky_tabImageView
                                       attribute:NSLayoutAttributeRight
                                      multiplier:1
                                        constant:self.ky_tabBadgePointViewOffset.horizontal]];
@@ -71,17 +71,20 @@
          [NSLayoutConstraint constraintWithItem:self.ky_tabBadgePointView
                                       attribute:NSLayoutAttributeCenterY
                                       relatedBy:0
-                                         toItem:self.ky_imageView
+                                         toItem:self.ky_tabImageView
                                       attribute:NSLayoutAttributeTop
                                      multiplier:1
                                        constant:self.ky_tabBadgePointViewOffset.vertical]];
     }
-    
     self.ky_tabBadgePointView.hidden = showTabBadgePoint == NO;
     self.ky_tabBadgeView.hidden = showTabBadgePoint == YES;
 }
 
 - (void)ky_setTabBadgePointView:(UIView *)tabBadgePointView {
+    UIView *tempView = objc_getAssociatedObject(self, @selector(ky_tabBadgePointView));
+    if (tempView) {
+        [tempView removeFromSuperview];
+    }
     if (tabBadgePointView.superview) {
         [tabBadgePointView removeFromSuperview];
     }
@@ -104,20 +107,11 @@
     objc_setAssociatedObject(self, @selector(ky_tabBadgePointViewOffset), [NSValue valueWithUIOffset:tabBadgePointViewOffset], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-//offset如果都是整数，则往右下偏移
+//offset如果都是正数，则往右下偏移
 - (UIOffset)ky_tabBadgePointViewOffset {
     id tabBadgePointViewOffsetObject = objc_getAssociatedObject(self, @selector(ky_tabBadgePointViewOffset));
     UIOffset tabBadgePointViewOffset = [tabBadgePointViewOffsetObject UIOffsetValue];
     return tabBadgePointViewOffset;
-}
-
-- (UIImageView *)ky_imageView {
-    for (UIView *subview in self.subviews) {
-        if ([subview ky_isTabImageView]) {
-            return (UIImageView *)subview;
-        }
-    }
-    return nil;
 }
 
 - (UIView *)ky_tabBadgeView {
@@ -153,6 +147,5 @@
     UIView *defaultRedTabBadgePointView = [UIView ky_tabBadgePointViewWithClolor:[UIColor redColor] radius:4.5];
     return defaultRedTabBadgePointView;
 }
-
 
 @end

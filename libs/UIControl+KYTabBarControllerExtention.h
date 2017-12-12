@@ -26,9 +26,9 @@
 //
 
 #import <UIKit/UIKit.h>
-@interface UIControl (KYTabBarControllerExtention)
 
-- (UIImageView *)ky_imageView;
+@interface UIControl (CYLTabBarControllerExtention)
+
 - (UIView *)ky_tabBadgeView;
 - (UIImageView *)ky_tabImageView;
 - (UILabel *)ky_tabLabel;
