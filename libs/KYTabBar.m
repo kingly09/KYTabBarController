@@ -76,7 +76,7 @@ static void *const KYTabBarContext = (void*)&KYTabBarContext;
 - (CGSize)sizeThatFits:(CGSize)size {
     CGSize sizeThatFits = [super sizeThatFits:size];
     CGFloat height = [self ky_tabBarController].tabBarHeight;
-    if (height > 0 && !KY_IS_IPHONE_X && KY_IS_IOS_11) {
+    if (height > 0 ) {
         sizeThatFits.height = [self ky_tabBarController].tabBarHeight;
     }
     return sizeThatFits;

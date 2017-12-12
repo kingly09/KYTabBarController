@@ -45,36 +45,37 @@
     KYTabBarControllerConfig *tabBarControllerConfig = [[KYTabBarControllerConfig alloc] init];
     KYTabBarController *tabBarController = tabBarControllerConfig.tabBarController;
     [self.window setRootViewController:tabBarController];
-    [tabBarController setViewDidLayoutSubViewsBlock:^(KYTabBarController *aTabBarController) {
-        UIViewController *viewController = aTabBarController.viewControllers[0];
-        UIView *tabBadgePointView0 = [UIView ky_tabBadgePointViewWithClolor:RANDOM_COLOR radius:4.5];
-        [viewController.tabBarItem.ky_tabButton ky_setTabBadgePointView:tabBadgePointView0];
-        [viewController ky_showTabBadgePoint];
-        
-        UIView *tabBadgePointView1 = [UIView ky_tabBadgePointViewWithClolor:RANDOM_COLOR radius:4.5];
-        [aTabBarController.viewControllers[1] ky_setTabBadgePointView:tabBadgePointView1];
-        [aTabBarController.viewControllers[1] ky_showTabBadgePoint];
-        
-        UIView *tabBadgePointView2 = [UIView ky_tabBadgePointViewWithClolor:RANDOM_COLOR radius:4.5];
-        [aTabBarController.viewControllers[2] ky_setTabBadgePointView:tabBadgePointView2];
-        [aTabBarController.viewControllers[2] ky_showTabBadgePoint];
-        
-        [aTabBarController.viewControllers[3] ky_showTabBadgePoint];
-        
-        //添加提示动画，引导用户点击
-        [self addScaleAnimationOnView:aTabBarController.viewControllers[3].ky_tabButton.ky_tabImageView repeatCount:20];
-    }];
     
     tabBarController.delegate = self;
     [self.window makeKeyAndVisible];
-    [self customizeInterface];
-    
-    
+    [self customizeInterfaceWithTabBarController:tabBarController];
     return YES;
 }
 
-- (void)customizeInterface {
+- (void)customizeInterfaceWithTabBarController:(KYTabBarController *)tabBarController {
+    //设置导航栏
     [self setUpNavigationBarAppearance];
+    
+    [tabBarController hideTabBadgeBackgroundSeparator];
+    
+    //添加小红点
+    UIViewController *viewController = tabBarController.viewControllers[0];
+    UIView *tabBadgePointView0 = [UIView ky_tabBadgePointViewWithClolor:RANDOM_COLOR radius:4.5];
+    [viewController.tabBarItem.ky_tabButton ky_setTabBadgePointView:tabBadgePointView0];
+    [viewController ky_showTabBadgePoint];
+    
+    UIView *tabBadgePointView1 = [UIView ky_tabBadgePointViewWithClolor:RANDOM_COLOR radius:4.5];
+    [tabBarController.viewControllers[1] ky_setTabBadgePointView:tabBadgePointView1];
+    [tabBarController.viewControllers[1] ky_showTabBadgePoint];
+    
+    UIView *tabBadgePointView2 = [UIView ky_tabBadgePointViewWithClolor:RANDOM_COLOR radius:4.5];
+    [tabBarController.viewControllers[2] ky_setTabBadgePointView:tabBadgePointView2];
+    [tabBarController.viewControllers[2] ky_showTabBadgePoint];
+    
+    [tabBarController.viewControllers[3] ky_showTabBadgePoint];
+    
+    //添加提示动画，引导用户点击
+    [self addScaleAnimationOnView:tabBarController.viewControllers[3].ky_tabButton.ky_tabImageView repeatCount:20];
 }
 
 /**
